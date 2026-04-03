@@ -1,4 +1,4 @@
-This package takes a 0D cardiovascular flow model as input and replaces the resistances and inductances for vessels and junctions with values predicted by pretrained neural networks from the vessel or junction geometry.  See Rubio et. al. for more details.  The 0D input files considered here are those compatible with [svZeroDSolver](https://github.com/SimVascular/svZeroDSolver), a forward solver for 0D cardiovascular lumped parameter networks.
+This package takes a 0D cardiovascular flow model as input and replaces the resistances and inductances for vessels and junctions with values predicted by pretrained neural networks from the vessel or junction geometry.  See [Rubio et.al.] (https://arxiv.org/abs/2604.01549) for more details.  The 0D input files considered here are those compatible with [svZeroDSolver](https://github.com/SimVascular/svZeroDSolver), a forward solver for 0D cardiovascular lumped parameter networks.
 
 ### Installation
 
