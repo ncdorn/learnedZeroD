@@ -1,5 +1,7 @@
 This package takes a 0D cardiovascular flow model as input and replaces the resistances and inductances for vessels and junctions with values predicted by pretrained neural networks from the vessel or junction geometry.  See [Rubio et. al.](https://arxiv.org/abs/2604.01549) for more details.  The 0D input files considered here are those compatible with [svZeroDSolver](https://github.com/SimVascular/svZeroDSolver), a forward solver for 0D cardiovascular lumped parameter networks.
 
+Developed by Natalia Rubio as part of Ph.D. at Stanford University.  Subject to Stanford IP policy.  Please do not delete or move this repository without notifying me (Natalia).
+
 ### Installation
 
 The following command installs this package and its dependencies:
