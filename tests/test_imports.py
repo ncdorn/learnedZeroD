@@ -56,6 +56,21 @@ def test_util_shim_for_dill():
     assert hasattr(nm, "predict")
 
 
+def test_jax_jitted_prediction():
+    """The inference path supports the current JAX JIT and array APIs."""
+    import jax.numpy as jnp
+
+    from learnedzerod._internal.neural_network.nn_predict import predict
+
+    inputs = jnp.array([[1.0, -2.0], [-3.0, 4.0]], dtype=jnp.float32)
+    weights = [(jnp.array([[2.0, 1.0]], dtype=jnp.float32), jnp.array([0.5]))]
+
+    prediction = predict(inputs, weights)
+
+    assert prediction.shape == (2, 1)
+    assert jnp.allclose(prediction, jnp.array([[0.5], [-1.5]], dtype=jnp.float32))
+
+
 def test_models_readme_exists():
     import learnedzerod
 
