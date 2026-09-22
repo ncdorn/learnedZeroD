@@ -10,9 +10,8 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "Proprietary" }
 dependencies = [
-    # JAX owns the compatible jaxlib constraint.  Depending on jaxlib directly
-    # can otherwise let pip select an incompatible backend pair.
-    "jax>=0.10.2",
+    "jax>=0.4.36,<0.5",
+    "jaxlib>=0.4.36,<0.5",
     "numpy>=2.0",
     "optax>=0.2.8",
     "vtk>=9.2",
