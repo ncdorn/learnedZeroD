@@ -7,10 +7,13 @@ Developed by Natalia Rubio as part of Ph.D. at Stanford University.  Subject to 
 The following command installs this package and its dependencies:
 
 ```bash
-conda create -n learnedzerod python=3.11 -y && \
+conda create -n learnedzerod python=3.12 -y && \
 conda activate learnedzerod && \
 pip install -e ".[dev]"
 ```
+
+The package requires Python 3.12 or newer. JAX installs the matching `jaxlib`
+backend automatically; install a JAX accelerator extra separately if needed.
 
 ### Execution
 
